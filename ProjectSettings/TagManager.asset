@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Player2AudioSourceJump
+  - Player2AudioSourceGetShoot
+  - Player2
+  - Weapon
+  - Player1
+  - Player1AudioSourceJump
+  - Player1AudioSourceGetShoot
+  - RedImage
+  - ScoreManager
+  - WinnerPlayer1
+  - WinnerPlayer2
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Back
+    uniqueID: 4271705775
+    locked: 0
+  - name: BackGround
+    uniqueID: 1433011947
+    locked: 0
+  - name: Ground
+    uniqueID: 2545375267
+    locked: 0
+  - name: EffectsBot
+    uniqueID: 273666849
+    locked: 0
+  - name: Player
+    uniqueID: 1111594231
+    locked: 0
+  - name: Weapon
+    uniqueID: 1649182185
+    locked: 0
+  - name: EffectTop
+    uniqueID: 113993319
+    locked: 0
+  - name: UI
+    uniqueID: 2707612287
+    locked: 0
