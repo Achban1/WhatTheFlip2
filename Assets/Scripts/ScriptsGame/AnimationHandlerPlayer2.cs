@@ -1,6 +1,6 @@
 using Spine.Unity;
 using UnityEngine;
-using Spine.Unity;
+//using Spine.Unity;
 
 public class AnimationHandlerPlayer2 : MonoBehaviour
 {

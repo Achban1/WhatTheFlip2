@@ -7,7 +7,7 @@ using Unity.VisualScripting;
 public class Menu1 : MonoBehaviour
 {
     //esc menu
-    PauseMenuEnabler enabler;
+    public PauseMenuEnabler enabler;
     //public GameObject controlsImage;
 
     private void Start()
