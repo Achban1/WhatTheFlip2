@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RealHand : MonoBehaviour
+public class RealHand2 : MonoBehaviour
 {
     public GameObject rifleBullet;
     public Transform gunPoint;
@@ -11,11 +11,11 @@ public class RealHand : MonoBehaviour
 
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player1");
+        player = GameObject.FindGameObjectWithTag("Player2");
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.RightControl))
         {
             var bullet = Instantiate(rifleBullet, gunPoint.position, Quaternion.identity);
             Vector2 playerScale = player.transform.localScale;

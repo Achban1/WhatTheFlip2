@@ -5,7 +5,6 @@ using UnityEngine;
 public class PickupRifle : MonoBehaviour
 {
     public GameObject rifleBullet;
-    public GameObject gunPoint;
     private Transform theHand;
     private Transform player;
 

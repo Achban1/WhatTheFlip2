@@ -15,6 +15,7 @@ TagManager:
   - ScoreManager
   - WinnerPlayer1
   - WinnerPlayer2
+  - PickupRifle
   layers:
   - Default
   - TransparentFX
