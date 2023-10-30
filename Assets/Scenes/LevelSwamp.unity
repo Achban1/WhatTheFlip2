@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 361592635}
   - component: {fileID: 361592634}
-  - component: {fileID: 361592633}
   m_Layer: 0
   m_Name: Rotator
   m_TagString: Untagged
@@ -141,20 +140,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &361592633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 361592632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d05c613ceece577498e86bb87330b2d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 2000
-  scoreManager: {fileID: 0}
 --- !u!114 &361592634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -907,6 +892,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1470079569251530209, guid: 4fe13120a624ba84389bab04b05858c9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2685884990322707249, guid: 4fe13120a624ba84389bab04b05858c9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.6809336
@@ -945,6 +934,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2685884990322707249, guid: 4fe13120a624ba84389bab04b05858c9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3891365961071160334, guid: 4fe13120a624ba84389bab04b05858c9, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

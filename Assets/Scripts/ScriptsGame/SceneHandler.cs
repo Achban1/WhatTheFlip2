@@ -38,7 +38,11 @@ public class SceneHandler : MonoBehaviour
             Invoke(nameof(LoadNextScene), lerpDuration);
             //PlayerMovement.Instance.DisableAllMovement();
         }
-        
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene("Menu");
+        }
     }
     private void SceneOpening()
     {

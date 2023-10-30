@@ -36,3 +36,5 @@ public class CameraScript : MonoBehaviour
         cameraTransform.localPosition = originalPosition;
     }
 }
+
+
