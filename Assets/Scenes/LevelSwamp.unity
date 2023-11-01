@@ -940,6 +940,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6645944672081448953, guid: 4fe13120a624ba84389bab04b05858c9, type: 3}
+      propertyPath: weapons.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6645944672081448953, guid: 4fe13120a624ba84389bab04b05858c9, type: 3}
+      propertyPath: weapons.Array.data[1]
+      value: 
+      objectReference: {fileID: 3903148839971063233, guid: e18443a31a699af428a8294783331ccd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

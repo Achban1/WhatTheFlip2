@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class RotationController : MonoBehaviour
 {
+    public static RotationController Instance { get; private set; }
     public float rotationSpeed = 5f;
     private Quaternion targetRotation;
     private Coroutine flipRoutine;
@@ -13,6 +14,7 @@ public class RotationController : MonoBehaviour
 
     void Start()
     {
+        Instance = this;
         camerascript = Camera.main.GetComponent<CameraScript>();
 
         GameObject redImageGO = GameObject.FindGameObjectWithTag("RedImage");
@@ -37,7 +39,7 @@ public class RotationController : MonoBehaviour
         redImage.color = color;
 
         targetRotation = transform.rotation;
-        flipRoutine = StartCoroutine(RandomFlip());
+        //flipRoutine = StartCoroutine(RandomFlip());
     }
 
     void Update()
@@ -45,7 +47,7 @@ public class RotationController : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
 
-    private void StartFlip()
+    public void StartFlip()
     {
         targetRotation *= Quaternion.Euler(0, 0, 180);
         Invoke(nameof(CameraShakeWithDelay), 0f);
@@ -57,23 +59,6 @@ public class RotationController : MonoBehaviour
     }
     
 
-    private IEnumerator RandomFlip()
-    {
-        while (true)
-        {
-            float randomTime = Random.Range(5f, 20f);
-
-            // Wait for the (randomTime - 2) seconds before starting the flash
-            yield return new WaitForSeconds(randomTime - 2f);
-
-            // Start flashing and wait for 2 seconds
-            StartCoroutine(FlashRedImage());
-            yield return new WaitForSeconds(0f); // it was 1.5
-
-            // Then start the flip
-            StartFlip();
-        }
-    }
 
     private IEnumerator FlashRedImage()
     {

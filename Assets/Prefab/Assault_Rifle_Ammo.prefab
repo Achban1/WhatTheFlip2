@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Assault_Rifle_Ammo
       objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: 06232915ebed1044daeba7d2a049db72, type: 3}
+      propertyPath: m_TagString
+      value: Bullet
+      objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: 06232915ebed1044daeba7d2a049db72, type: 3}
       propertyPath: m_SortingLayer
       value: 5

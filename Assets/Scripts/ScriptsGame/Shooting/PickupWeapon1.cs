@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class PickupWeapon : MonoBehaviour
 {
+    public static PickupWeapon Instance {  get; private set; }
     private PickupRifle pickuprifle;
     public Transform realHand;
     public GameObject rifle;
+    public int weapon;
     //private Bomb bomb;
     //private GrenadeWeapon grenade;
 
@@ -14,6 +16,7 @@ public class PickupWeapon : MonoBehaviour
 
     void Start()
     {
+        Instance = this;
         pickuprifle = GameObject.FindObjectOfType<PickupRifle>();
         //bomb = GameObject.FindObjectOfType<Bomb>();
         //grenade = GameObject.FindObjectOfType<GrenadeWeapon>();
@@ -23,6 +26,7 @@ public class PickupWeapon : MonoBehaviour
     {
         if (other.gameObject.GetComponent<PickupRifle>() != null)
         {
+            //weapon = 1;
             var hej = transform.localScale;
             var rotationY = hej.x > 0 ? 0 : 180; // Check if local scale is positive or negative
             var newRotation = Quaternion.Euler(0, rotationY, 0);
@@ -31,10 +35,13 @@ public class PickupWeapon : MonoBehaviour
             Destroy(other.gameObject);
         }
 
-
-
         else if (other.gameObject.GetComponent<Bomb>() != null)
         {
+            //weapon = 2;
+        }
+        else
+        {
+            //weapon = 0;
         }
     }
 }

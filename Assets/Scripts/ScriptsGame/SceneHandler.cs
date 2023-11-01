@@ -19,6 +19,7 @@ public class SceneHandler : MonoBehaviour
 
     private void Start()
     {
+        //PickupWeapon.Instance.weapon = 0;
         timer = 0f;
         startPosition = new Vector3(0, 14, 0);
         centerPosition = new Vector3(0, 0, 0);

@@ -16,6 +16,7 @@ TagManager:
   - WinnerPlayer1
   - WinnerPlayer2
   - PickupRifle
+  - Bullet
   layers:
   - Default
   - TransparentFX

@@ -18,7 +18,7 @@ public class WeaponDropper : MonoBehaviour
         float xPos = Random.Range(-screenWidth / 2, screenWidth / 2);
         Vector2 spawnPos = new Vector2(xPos, 10);
         Instantiate(weapons[num], spawnPos, Quaternion.identity);
-        Invoke(nameof(DropWeapon), 7f);
+        Invoke(nameof(DropWeapon), 3f);
     }
 
 }

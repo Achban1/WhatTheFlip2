@@ -189,7 +189,6 @@ public class PlayerMovement : MonoBehaviour
         PlayerMovement otherPlayer = collision.gameObject.GetComponent<PlayerMovement>();
         if (otherPlayer != null && !isBouncing)
         {
-
             float bounce = 1f;
 
             Vector2 bounceDirection = (this.rb2D.position - otherPlayer.rb2D.position).normalized;
@@ -203,6 +202,24 @@ public class PlayerMovement : MonoBehaviour
 
             DisableMovement();
             otherPlayer.DisableMovement();
+
+            camerascript.Shake(0.1f);
+        }
+        else if (collision.gameObject.CompareTag("Bullet"))
+        {
+            var bullet = collision.gameObject;
+            var bulletRb = bullet.GetComponent<Rigidbody2D>();
+            float bounce = 1f;
+            Vector2 currentPos = new Vector2(rb2D.position.x, rb2D.position.y);
+            Vector2 bulletPos = new Vector2(bulletRb.position.x, bulletRb.position.y);
+            Vector2 bounceDirection = (currentPos - bulletPos).normalized;
+            Vector2 bounceForce = bounceDirection * bounce * Mathf.Abs(rb2D.velocity.magnitude);
+            rb2D.AddForce(bounceForce, ForceMode2D.Impulse);
+
+            isBouncing = true;
+            Invoke(nameof(StopBounce), 0.3f);
+
+            DisableMovement();
 
             camerascript.Shake(0.1f);
         }
