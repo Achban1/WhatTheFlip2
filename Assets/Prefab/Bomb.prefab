@@ -14,11 +14,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: 765c3263dc809604fb026b33f2582919, type: 3}
       propertyPath: m_SortingLayer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: 765c3263dc809604fb026b33f2582919, type: 3}
       propertyPath: m_SortingLayerID
-      value: 113993319
+      value: 1649182185
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 765c3263dc809604fb026b33f2582919, type: 3}
       propertyPath: m_LocalScale.x
@@ -154,9 +154,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.024999999, y: 0.18}
+  m_Offset: {x: -0.004442354, y: 0.15691781}
   serializedVersion: 2
-  m_Radius: 0.09
+  m_Radius: 0.07016373
 --- !u!114 &2417551130094371275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,4 +169,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c17f9e4c6d73c694da6ab0443f52ccf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotator: {fileID: 0}
+  explotion: {fileID: 7257351873058186397, guid: 29cb02122442540478dcdfcf1c3d5d73, type: 3}

@@ -63,14 +63,14 @@ TagManager:
   - name: Ground
     uniqueID: 2545375267
     locked: 0
-  - name: EffectsBot
-    uniqueID: 273666849
-    locked: 0
   - name: Player
     uniqueID: 1111594231
     locked: 0
   - name: Weapon
     uniqueID: 1649182185
+    locked: 0
+  - name: EffectsBot
+    uniqueID: 273666849
     locked: 0
   - name: EffectTop
     uniqueID: 113993319

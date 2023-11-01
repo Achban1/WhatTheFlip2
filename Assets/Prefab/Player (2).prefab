@@ -5412,6 +5412,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 00a9c35afbd52aa41b889d7ce96ccb25, type: 3}
   - {fileID: 8300000, guid: 67c6eaab3e4d1dd4d98ae6f012af9db2, type: 3}
   - {fileID: 8300000, guid: 7dd887a5fd1197c4cbc70044ae6197a0, type: 3}
+  bombExplotion: {fileID: 0}
 --- !u!1 &6048947938254905890
 GameObject:
   m_ObjectHideFlags: 0
@@ -5564,6 +5565,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2e969f3063d91fe4cb347a58f48e63d8, type: 3}
   - {fileID: 8300000, guid: f65346c88ccc77b49827a0fd08bcaf2e, type: 3}
   - {fileID: 8300000, guid: 911241dee98cae64381ccc81f220e65c, type: 3}
+  bombExplotion: {fileID: 0}
 --- !u!1 &7277747039482411777
 GameObject:
   m_ObjectHideFlags: 0
@@ -5685,6 +5687,7 @@ GameObject:
   - component: {fileID: 4123836702985885943}
   - component: {fileID: 3137934066236335687}
   - component: {fileID: 2334108188632888208}
+  - component: {fileID: 7940946172627703592}
   m_Layer: 0
   m_Name: Player (2)
   m_TagString: Player2
@@ -5979,6 +5982,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realHand: {fileID: 2959289762055096073}
   rifle: {fileID: 826466925995083838, guid: b2e378a675a1e614b90e80fe456e4928, type: 3}
+  weapon: 0
+--- !u!114 &7940946172627703592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8885026466575621423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da51f98260403334a8aa39b62891b80f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Audio:
+  - {fileID: 8300000, guid: 41fd891ae73913342a8dc4679711df89, type: 3}
+  - {fileID: 8300000, guid: 29f92f83f9fd5754da9b0ec63f7d90e9, type: 3}
+  - {fileID: 8300000, guid: cfdcb53b2836ec44bad390849e0d0ddc, type: 3}
+  - {fileID: 8300000, guid: bf7b8b3e95e68b947ae5f6dedc771b01, type: 3}
+  - {fileID: 8300000, guid: f40fe569e6f210040915568065eec5c2, type: 3}
+  - {fileID: 8300000, guid: 8d9c1c01095964e448062b33d3c4edc4, type: 3}
+  - {fileID: 8300000, guid: 64aabfa1de2bc9e4ab2dd7485208f0dc, type: 3}
+  - {fileID: 8300000, guid: 00a9c35afbd52aa41b889d7ce96ccb25, type: 3}
+  - {fileID: 8300000, guid: 67c6eaab3e4d1dd4d98ae6f012af9db2, type: 3}
+  - {fileID: 8300000, guid: 7dd887a5fd1197c4cbc70044ae6197a0, type: 3}
+  bombExplotion: {fileID: 8300000, guid: 91f53c9e21ae55a4a857b59030034fba, type: 3}
 --- !u!1001 &914381467372481018
 PrefabInstance:
   m_ObjectHideFlags: 0

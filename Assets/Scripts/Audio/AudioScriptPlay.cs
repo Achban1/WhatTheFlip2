@@ -20,4 +20,5 @@ public class AudioScriptPlay : MonoBehaviour
         audioSource.clip = Audio[randomIndex];
         audioSource.PlayOneShot(audioSource.clip);
     }
+    
 }
