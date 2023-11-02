@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: 765c3263dc809604fb026b33f2582919, type: 3}
       propertyPath: m_SortingLayer
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: 765c3263dc809604fb026b33f2582919, type: 3}
       propertyPath: m_SortingLayerID
@@ -169,4 +169,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c17f9e4c6d73c694da6ab0443f52ccf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explotion: {fileID: 7257351873058186397, guid: 29cb02122442540478dcdfcf1c3d5d73, type: 3}
+  explosion: {fileID: 7257351873058186397, guid: 29cb02122442540478dcdfcf1c3d5d73, type: 3}

@@ -207,11 +207,10 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Bullet"))
         {
-            var bullet = collision.gameObject;
-            var bulletRb = bullet.GetComponent<Rigidbody2D>();
+            var bulletRb = collision.gameObject.GetComponent<Rigidbody2D>();
             float bounce = 1f;
             Vector2 currentPos = new Vector2(rb2D.position.x, rb2D.position.y);
-            Vector2 bulletPos = new Vector2(bulletRb.position.x, bulletRb.position.y);
+            Vector2 bulletPos = new Vector2(bulletRb.position.x, bulletRb.position.y+1.4f);
             Vector2 bounceDirection = (currentPos - bulletPos).normalized;
             Vector2 bounceForce = bounceDirection * bounce * Mathf.Abs(rb2D.velocity.magnitude);
             rb2D.AddForce(bounceForce, ForceMode2D.Impulse);

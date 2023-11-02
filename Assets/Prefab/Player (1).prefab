@@ -85,7 +85,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1111594231
-  m_SortingLayer: 5
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.02264148, g: 0.06396486, b: 1, a: 0}
@@ -165,7 +165,7 @@ TrailRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 273666849
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Time: 0.2
   m_PreviewTimeScale: 1
@@ -334,7 +334,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 00a9c35afbd52aa41b889d7ce96ccb25, type: 3}
   - {fileID: 8300000, guid: 67c6eaab3e4d1dd4d98ae6f012af9db2, type: 3}
   - {fileID: 8300000, guid: 7dd887a5fd1197c4cbc70044ae6197a0, type: 3}
-  bombExplotion: {fileID: 8300000, guid: 91f53c9e21ae55a4a857b59030034fba, type: 3}
 --- !u!1 &3420940237299563187
 GameObject:
   m_ObjectHideFlags: 0
@@ -5322,7 +5321,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 273666849
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -5506,7 +5505,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 00a9c35afbd52aa41b889d7ce96ccb25, type: 3}
   - {fileID: 8300000, guid: 67c6eaab3e4d1dd4d98ae6f012af9db2, type: 3}
   - {fileID: 8300000, guid: 7dd887a5fd1197c4cbc70044ae6197a0, type: 3}
-  bombExplotion: {fileID: 0}
 --- !u!1 &6928201934940382887
 GameObject:
   m_ObjectHideFlags: 0
@@ -5579,7 +5577,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 273666849
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -1605555748, guid: 9825933792c07014e94d7777c02d7fd9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5865,7 +5863,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2e969f3063d91fe4cb347a58f48e63d8, type: 3}
   - {fileID: 8300000, guid: f65346c88ccc77b49827a0fd08bcaf2e, type: 3}
   - {fileID: 8300000, guid: 911241dee98cae64381ccc81f220e65c, type: 3}
-  bombExplotion: {fileID: 0}
 --- !u!1 &9172638096792496438
 GameObject:
   m_ObjectHideFlags: 0
@@ -5948,7 +5945,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1111594231
-  m_SortingLayer: 5
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &1490702496288218926
@@ -6087,7 +6084,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2469203615407325637, guid: 0253d8ab4ed1ad14fa65045fd1b73e60, type: 3}
       propertyPath: m_SortingLayer
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2469203615407325637, guid: 0253d8ab4ed1ad14fa65045fd1b73e60, type: 3}
       propertyPath: m_SortingLayerID

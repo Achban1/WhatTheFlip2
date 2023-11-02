@@ -17,6 +17,10 @@ public class RealHand2 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.RightControl))
         {
+            if (transform.GetChild(1) == null)
+            {
+                return;
+            }
             var bullet = Instantiate(rifleBullet, gunPoint.position, Quaternion.identity);
             Vector2 playerScale = player.transform.localScale;
             bullet.transform.right = new Vector2(playerScale.x, 0);

@@ -17,24 +17,14 @@ public class RealHand : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
-            if (PickupWeapon.Instance.weapon == 0) //no weapon
+            if (transform.GetChild(1) == null)
             {
                 return;
             }
-            if (PickupWeapon.Instance.weapon == 1) //rifle
-            {
-                var bullet = Instantiate(rifleBullet, gunPoint.position, Quaternion.identity);
-                Vector2 playerScale = player.transform.localScale;
-                bullet.transform.right = new Vector2(playerScale.x, 0);
-                bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * bulletSpeed;
-            }
-            if (PickupWeapon.Instance.weapon == 2) //light gun
-            {
-                var bullet = Instantiate(rifleBullet, gunPoint.position, Quaternion.identity);
-                Vector2 playerScale = player.transform.localScale;
-                bullet.transform.right = new Vector2(playerScale.x, 0);
-                bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * bulletSpeed;
-            }
+            var bullet = Instantiate(rifleBullet, gunPoint.position, Quaternion.identity);
+            Vector2 playerScale = player.transform.localScale;
+            bullet.transform.right = new Vector2(playerScale.x, 0);
+            bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * bulletSpeed;
         }
     }
 }
