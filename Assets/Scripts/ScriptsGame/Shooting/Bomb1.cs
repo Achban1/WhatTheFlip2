@@ -18,7 +18,7 @@ public class Bomb1 : MonoBehaviour
     {
         if (transform.position.y > -20 && transform.position.y < 5.66f)
         {
-            Vector3 offset = new Vector3(0, 2f, 0);
+            Vector3 offset = new Vector3(0, 2.1f, 0);
             var expl = Instantiate(explosion, transform.position - offset, Quaternion.identity);
             Destroy(expl, 0.6f);
         }
