@@ -20,6 +20,5 @@ public class WeaponDropper : MonoBehaviour
         Instantiate(weapons[num], spawnPos, Quaternion.identity);
         Invoke(nameof(DropWeapon), 3f);
     }
-
 }
 

@@ -10,9 +10,11 @@ public class Menu : MonoBehaviour
     //public float fxSlider;
     public GameObject image;
     public GameObject Logo;
+    public GameObject backgrounds;
+    private AudioListener audioListener;
     void Start()
     {
-        
+        audioListener = GetComponent<AudioListener>();
     }
 
     void Update()
@@ -20,6 +22,13 @@ public class Menu : MonoBehaviour
         
     }
 
+    public void StartFall()
+    {
+        Invoke(nameof(StartButton), 1.5f);
+        var backgroundThing = Instantiate(backgrounds);
+        audioListener.enabled = false;
+        Destroy(backgroundThing,5f);
+    }
     public void StartButton()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;

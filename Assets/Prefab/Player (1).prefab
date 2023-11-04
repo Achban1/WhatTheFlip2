@@ -288,7 +288,7 @@ MonoBehaviour:
   playerID: 0
   maxSpeed: 12
   acceleration: 80
-  deacceleration: 2
+  deacceleration: 4.2
   jumpPower: 7
   groundCheckDistance: 0.01
   onGround: 1

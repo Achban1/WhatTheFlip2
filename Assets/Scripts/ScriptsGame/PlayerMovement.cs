@@ -19,7 +19,6 @@ public enum PlayerState
 
 public class PlayerMovement : MonoBehaviour
 {
-    public static PlayerMovement Instance { get; private set; }
 
     [Header("Player ID")]
     public PlayerID playerID;
@@ -49,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
     bool canMoveAtAll = true;       //to turn off all movement when changing scene or flipping
 
     CameraScript camerascript;
+    Collider2D colliders;
 
     public new Transform transform;
 
@@ -60,7 +60,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        Instance = this;
         Physics2D.queriesStartInColliders = false;
         rb2D = GetComponent<Rigidbody2D>();
         var collider = GetComponent<Collider2D>();
@@ -148,7 +147,7 @@ public class PlayerMovement : MonoBehaviour
         if (onGround)
             currentJumps[playerIndex] = 0;
     }
-
+    
     private void HorizontalMovement()
     {
         float x = GetPlayerInputHorizontal();
@@ -240,13 +239,23 @@ public class PlayerMovement : MonoBehaviour
         canMoveAtAll = false;
         rb2D.velocity = Vector2.zero;
         rb2D.gravityScale = 0f;
-        Invoke(nameof(EnableAllMovement),0.5f);
-        //turnof colliders
+        Invoke(nameof(EnableAllMovement),0.4f);
+        colliders = GetComponent<Collider2D>(); 
+        colliders.enabled = canMoveAtAll;
     }
     void EnableAllMovement()
     {
+        int playerIndex = (playerID == PlayerID.Player1) ? 0 : 1;
+        currentJumps[playerIndex] = 0;
+        Transform hand = transform.GetChild(0);
+        if (hand != null)
+        {
+            hand.gameObject.SetActive(true);
+        }
         rb2D.gravityScale = 1f;
         canMoveAtAll = true;
+        colliders = GetComponent<Collider2D>();
+        colliders.enabled = canMoveAtAll;
     }
 
     void StopBounce()
@@ -258,10 +267,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!canMoveAtAll)
         {
+            rb2D.AddForce(new Vector2(0, 100f) * Time.deltaTime);
             return;
         }
 
-        if (canMove)
+        else if (canMove)
         {
             HorizontalMovement();
             CheckForQuickDash();

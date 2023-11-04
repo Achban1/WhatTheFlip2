@@ -16,7 +16,7 @@ public class Bomb1 : MonoBehaviour
     }
     private void Anim()
     {
-        if (transform.position.y > -20)
+        if (transform.position.y > -20 && transform.position.y < 5.66f)
         {
             Vector3 offset = new Vector3(0, 2f, 0);
             var expl = Instantiate(explosion, transform.position - offset, Quaternion.identity);
@@ -25,13 +25,34 @@ public class Bomb1 : MonoBehaviour
     }
     private void CallFlip()
     {
-
-        if (transform.position.y > -20)
+        if (transform.position.y > -20 && transform.position.y < 5.66f)
         {
-            
-            RotationController.Instance.StartFlip();
+            var allPlayerMovements = FindObjectsOfType<PlayerMovement>(); 
+            if (allPlayerMovements != null)
+            {
+                foreach (var playerMovement in allPlayerMovements)
+                {
+                    playerMovement.DisableAllMovement();
+                    Transform hand = playerMovement.transform.GetChild(0); 
+                    if (hand != null)
+                    {
+                        hand.gameObject.SetActive(false); 
+                    }
+                }
+                RotationController.Instance.StartFlip();
+                SoundEffects.instance.BombExplosionSound();
+
+                Destroy(gameObject);
+            }
+        }
+    }
+
+
+    private void Update()
+    {
+        if (transform.position.y < -20)
+        {
             Destroy(gameObject);
-            SoundEffects.instance.BombExplosionSound();
         }
     }
 }
