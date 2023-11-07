@@ -47,23 +47,9 @@ public class PickupRifle : MonoBehaviour
     }
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.LeftControl))
-        //{
-        //    Vector2 bulletOffset = new Vector2(0, 0.68f);
-        //    if (rifleDir.x > 0)
-        //    {
-        //        Instantiate(rifleBullet, (Vector2)gunPoint.transform.position + bulletOffset, Quaternion.Euler(0, 0, 180));
-        //    }
-        //    if (rifleDir.x < 0)
-        //    {
-        //        Instantiate(rifleBullet, (Vector2)gunPoint.transform.position - bulletOffset, Quaternion.Euler(0, 0, 0));
-        //    }
-        //}
-        //if (isPickedUp && theHand != null)
-        //{
-        //    Vector2 gunPosOffset = new Vector2(0, -0.8f);
-        //    transform.position = (Vector2)theHand.position + gunPosOffset;
-        //    transform.rotation = rot;
-        //}
+        if (transform.position.y < -10)
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -10,13 +10,14 @@ public class RotationController : MonoBehaviour
     private Coroutine flipRoutine;
     public Image redImage;
 
+    PlayerMovement movementScript;
     CameraScript camerascript;
 
     void Start()
     {
         Instance = this;
         camerascript = Camera.main.GetComponent<CameraScript>();
-
+        movementScript = GetComponent<PlayerMovement>();
         GameObject redImageGO = GameObject.FindGameObjectWithTag("RedImage");
         if (redImageGO != null)
         {
