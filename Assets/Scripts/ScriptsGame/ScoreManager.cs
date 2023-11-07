@@ -86,4 +86,9 @@ public class ScoreManager : MonoBehaviour
         SceneManager.LoadScene("Menu");
         Destroy(this.gameObject);
     }
+
+    public void DestroyScoreManager()
+    {
+        Destroy(this.gameObject);
+    }
 }

@@ -77,7 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04773922526afa04daddcda1c5ac31bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enabler: {fileID: 0}
+  enabler: {fileID: 3552301131475424475}
 --- !u!114 &6645944672081448953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -976,8 +976,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1100842232468396924}
-        m_TargetAssemblyTypeName: Menu1, Assembly-CSharp
+      - m_Target: {fileID: 3552301131475424475}
+        m_TargetAssemblyTypeName: PauseMenuEnabler, Assembly-CSharp
         m_MethodName: LoadMenu
         m_Mode: 1
         m_Arguments:
@@ -1613,8 +1613,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1100842232468396924}
-        m_TargetAssemblyTypeName: Menu1, Assembly-CSharp
+      - m_Target: {fileID: 3552301131475424475}
+        m_TargetAssemblyTypeName: PauseMenuEnabler, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
         m_Arguments:
