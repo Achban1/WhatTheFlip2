@@ -366,7 +366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2181342593034306884, guid: 012cbca1eecec004689471344c984e2d, type: 3}
       propertyPath: winningScore
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5399610660198998131, guid: 012cbca1eecec004689471344c984e2d, type: 3}
       propertyPath: m_Name
